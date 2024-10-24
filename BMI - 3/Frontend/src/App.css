@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.health-tips-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(177, 127, 127, 0.85); /* Slightly transparent white background */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease; /* Optional: Add fade-in animation */
+  transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.health-tips-container:hover {
+  transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.health-tips h3 {
+  color: #3e3e3e;
+  margin-bottom: 15px;
+  font-size: 1.5rem; /* Slightly larger font size */
+  text-align: center; /* Center the heading */
+}
+
+.health-tips ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.health-tips li {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Transition effect on hover */
+}
+
+.health-tips li:hover {
+  color: #f39c12; /* Change color on hover */
+}
+
+
+.bmi-calculator {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(180, 45, 45, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.5s ease;
+  max-width: 400px;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bmi-calculator:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 15px 900px rgba(209, 148, 16, 0.93);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #f39c12;
+  margin-bottom: 20px;
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid #3e3e3e;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #74ebd5; /* Focus effect */
+}
+
+button {
+  padding: 15px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #53bc38; /* Hover color */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button:active {
+  transform: translateY(1px); /* Press effect */
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  animation: fadeIn 0.5s ease; /* Fade in result */
+  transition: color 0.3s ease; /* Transition for color change */
+}
+
+.result h3 {
+  color: #3e3e3e;
+  font-weight: 700;
+}
+
+.result p {
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Transition for health category */
+}
+
+.result p.underweight {
+  color: #3498db; /* Color for underweight */
+}
+
+.result p.normal {
+  color: #2ecc71; /* Color for normal weight */
+}
+
+.result p.overweight {
+  color: #e67e22; /* Color for overweight */
+}
+
+.result p.obesity {
+  color: #e74c3c; /* Color for obesity */
+}
+
+@media (max-width: 768px) {
+  .bmi-calculator {
+    width: 90vw;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+

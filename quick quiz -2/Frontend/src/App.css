@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('path-to-your-background-image.jpg') no-repeat center center fixed;
+  background-size: cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App {
+  text-align: center;
+  color: rgb(182, 90, 228);
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  width: 100vw;
+  min-height: 80vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.3s ease; 
+}
+
+.App:hover {
+  transform: scale(1.02); 
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px; 
+  animation: slideIn 0.5s ease; 
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+button {
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #daa021;
+  color: rgb(147, 28, 28);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+button:hover {
+  background-color: #40af24;
+  transform: translateY(-3px); 
+}
+
+button:active {
+  transform: translateY(1px); 
+}
+
+.quiz-container, .result-container {
+  margin: 20px;
+  opacity: 0; 
+  animation: fadeIn 0.5s forwards; 
+}
+
+.options button {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.8); 
+  color: #333; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.options button:hover {
+  background-color: #f39c12; 
+  transform: translateY(-2px); 
+}
+
+@media (max-width: 768px) {
+  .App {
+    width: 95vw;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .options button {
+    font-size: 1rem; /* Responsive font size for options */
+  }
+}
+
+

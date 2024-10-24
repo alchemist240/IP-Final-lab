@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  background-color: #a84c4c; 
+  color: #ecf0f1;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.app-container {
+  width: 95vw;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  background: linear-gradient(135deg, #b98ce5, #0b65c0); 
+  animation: gradientAnimation 5s ease infinite alternate; 
+  border-radius: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); 
+  padding: 40px;
+}
+
+.salary-estimator {
+  max-width: 400px;
+  width: 40%;
+  margin: 20px;
+  padding: 40px;
+  background: rgba(92, 155, 218, 0.9); 
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); 
+  transition: all 0.3s ease-in-out; 
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e74c3c; 
+  transition: color 0.3s ease; 
+}
+
+.salary-estimator form {
+  display: flex;
+  flex-direction: column;
+}
+
+.salary-estimator input {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; 
+}
+
+.salary-estimator input:focus {
+  background-color: #34495e; 
+}
+
+.salary-estimator button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e74c3c; 
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.salary-estimator button:hover {
+  background-color: #c0392b; 
+  transform: scale(1.05); 
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  animation: fadeIn 0.5s ease; 
+}
+
+.error {
+  color: #e74c3c; 
+  text-align: center;
+  animation: fadeIn 0.5s ease; 
+}
+
+.investment-tips {
+  width: 40%;
+  padding: 40px;
+  background: rgba(39, 174, 96, 0.9); 
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); 
+  color: #fff;
+  text-align: left;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease; 
+}
+
+.investment-tips:hover {
+  background-color: #27ae60;
+  transform: scale(1.05); 
+}
+
+.investment-tips ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.investment-tips li {
+  margin-bottom: 10px;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
