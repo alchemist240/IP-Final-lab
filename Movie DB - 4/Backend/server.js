@@ -1,13 +1,11 @@
-// server.js
+
 const express = require('express');
 const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Enable CORS
 app.use(cors());
 
-// Sample movie data (static JSON)
 const movies = [
   {
     id: 1,
@@ -51,14 +49,34 @@ const movies = [
     genre: "Action",
     description: "A parasite from another planet froms a symbiotic relationship with a human."
   },
+  {
+    id: 7,
+    title: "How I met your mother",
+    year: 2013,
+    genre: "Rom-com",
+    description: "A simple yet complicated story based in NewYork in narrators format about meeeting mother of his children."
+  },
+  {
+    id: 8,
+    title: "Mahabharat",
+    year: 1992,
+    genre: "Historical",
+    description: "Based on holy hindu scriptues and real life historical events."
+  },
+  {
+    id: 9,
+    title: "Tare Zameen par",
+    year: 2008,
+    genre: "Physcological Drama",
+    description: "A dyslexic boy in search of happiness finds a great teacher who helps him to find his true self. "
+  },
 ];
 
-// Endpoint to fetch all movies
 app.get('/api/movies', (req, res) => {
   res.json(movies);
 });
 
-// Start the server
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

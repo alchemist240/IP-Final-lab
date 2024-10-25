@@ -1,23 +1,21 @@
-/* src/App.css */
-
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #141414; /* Dark background */
-  color: #fff; /* White text for contrast */
-  height: 100vh; /* Full height */
-  overflow: hidden; /* Prevent scrolling */
+  background-color: #141414; 
+  color: #fff; 
+  height: 100vh; 
+  overflow: hidden; 
 }
 
 .app {
-  height: 100vh; /* Full height */
-  width: 100vw; /* Full width */
+  height: 100vh; 
+  width: 100vw; 
   display: flex;
-  flex-direction: column; /* Stack elements */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
   padding: 20px;
-  background: linear-gradient(135deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient of red to blue */
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.8)); 
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
@@ -25,8 +23,8 @@ body {
 
 .app-header {
   margin-bottom: 20px;
-  font-size: 3rem; /* Larger font for header */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+  font-size: 3rem; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
 }
 
 .movie-list {
@@ -34,12 +32,12 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  width: 100%; /* Full width for the list */
-  overflow-y: auto; /* Allow scrolling if content overflows */
+  width: 100%; 
+  overflow-y: auto; 
 }
 
 .movie-item {
-  background: rgba(255, 0, 0, 0.7); /* Semi-transparent red */
+  background: rgba(255, 0, 0, 0.7); 
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
@@ -47,11 +45,11 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
   flex: 0 1 calc(30% - 20px);
   min-width: 220px;
-  height: 300px; /* Set a fixed height for the movie divs */
-  display: flex; /* Use flexbox to center content */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: space-between; /* Space between children */
-  position: relative; /* for pseudo-elements */
+  height: 300px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  position: relative; 
 }
 
 .movie-item:hover {
@@ -67,24 +65,23 @@ body {
   right: 0;
   bottom: 0;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.1); /* semi-transparent overlay */
+  background: rgba(255, 255, 255, 0.1); 
   z-index: 0;
   transition: opacity 0.3s ease;
 }
 
 .movie-item:hover::before {
-  opacity: 0; /* fade out overlay on hover */
+  opacity: 0; 
 }
 
 .movie-item h2 {
   z-index: 1;
-  position: relative; /* for proper stacking */
+  position: relative; 
   color: #fff;
 }
 
 .movie-detail {
-  background: rgba(0, 0, 255, 0.8); /* Semi-transparent blue */
-  padding: 20px;
+  background: rgba(0, 0, 255, 0.8); 
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   animation: fadeIn 0.5s ease;
@@ -103,7 +100,7 @@ body {
 }
 
 .back-button {
-  background-color: #42a5f5; /* Blue button */
+  background-color: #42a5f5; 
   color: white;
   border: none;
   padding: 10px 15px;
@@ -113,7 +110,7 @@ body {
 }
 
 .back-button:hover {
-  background-color: #2196f3; /* Darker blue on hover */
+  background-color: #2196f3; 
   transform: scale(1.05);
 }
 
